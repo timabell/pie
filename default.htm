@@ -1,0 +1,97 @@
+<!--
+Pie is the definitive general purpose ASP database tool.
+(c)2000-2003
+by Tim Abell
+code@timwise.co.uk
+-->
+<html>
+  <head>
+	<title>Get database</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#ffffff" text="#000000">
+	<p><font size="+2">Open me a database</font></p>
+	<form name="form1" method="post" action="getrs.asp">
+	  <table border="0" cellspacing="0" cellpadding="2">
+		<tr>
+		  <td align="right">SQL Server</td>
+		  <td>
+			<input type="text" name="server" size="50">
+		  </td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td align="right">
+			<select name="type">
+			  <option value="sql" selected>SQL - Database Name</option>
+			  <option value="dsn">DSN - Source Name</option>
+			  <option value="mdb">Temp DSN - Access DB File</option>
+			  <option value="text">Text Driver - Dir. for .txt Files</option>
+			  <option value="cnstr">Connection String</option>
+			</select>
+		  </td>
+		  <td>
+			<input type="text" name="db" size="50">
+		  </td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>
+			<div align="center">
+			</div>
+		  </td>
+		  <td colspan="2">
+			<input type="checkbox" name="map" value="true"> <b>Map path</b> to directory / 
+			file
+			<span style="FONT-SIZE:smaller">(Direct 
+        Access / Text File Only)</span></td>
+		</tr>
+		<tr>
+		  <td align="right">UserID:</td>
+		  <td>
+			<input type="text" name="uid" size="50">
+		  </td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td align="right">Password:</td>
+		  <td>
+			<input type="password" name="password" size="50">
+		  </td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>
+			<input type="checkbox" name="countrecords" value="true" checked> Count Records</td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>
+			<input type="checkbox" name="parse" value="true"> Parse HTML</td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>
+			<input type="checkbox" name="showcnstr" value="true"> Show Connection String</td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;
+		  </td>
+		  <td>
+			<input type="submit" name="Submit" value="Next">
+		  </td>
+		</tr>
+	  </table>
+	  <p>
+	  </p>
+	</form>
+	<p align="right"><font size="-2">Data Access pages by Tim Abell<br>
+		updated: 12/08/03 </font>
+	</p>
+  </body>
+</html>
